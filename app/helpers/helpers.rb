@@ -4,7 +4,7 @@ class Helpers
     @current_user ||= User.find(session[:user_id]) if
     session[:user_id].present?
     @current_user
-
+    binding.pry
   end
 
   def is_logged_in?
